@@ -8,7 +8,7 @@ from telebot import types
 
 # Пример: token = '2007628239:AAEF4ZVqLiRKG7j49EC4vaRwXjJ6DN6xng8'
 tokenFile = open('token.txt')  # <<< Ваш токен
-token = tokenFile.readline()
+token = tokenFile.readline()  # Или: token = 'your_token'
 tokenFile.close()
 
 bot = telebot.TeleBot(token)
