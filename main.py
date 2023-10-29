@@ -2,17 +2,13 @@ import os
 import telebot
 import speech_recognition
 import emoji
-from base64 import b64decode
 from pydub import AudioSegment
 from PIL import Image
 from telebot import types
 
-# Ниже нужно вставить токен, который дал BotFather при регистрации
 # Пример: token = '2007628239:AAEF4ZVqLiRKG7j49EC4vaRwXjJ6DN6xng8'
 tokenFile = open('token.txt')  # <<< Ваш токен
-b64Token = tokenFile.readline()
-token_bytes = b64decode(b64Token)
-token = token_bytes.decode('ascii')
+token = tokenFile.readline()
 tokenFile.close()
 
 bot = telebot.TeleBot(token)
