@@ -1,0 +1,5 @@
+emoji~=2.6.0
+pydub~=0.25.1
+Pillow~=10.0.0
+setuptools~=65.5.1
+pyTelegramBotAPI~=4.12.0
